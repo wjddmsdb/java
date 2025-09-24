@@ -5925,3 +5925,46 @@ java.lang.Error: SWT Resource was not properly disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+!SESSION 2025-09-24 09:42:07.525 -----------------------------------------------
+eclipse.buildId=4.36.0.20250605-1300
+java.version=21.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/eunyu/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.java.product -keyring /Users/eunyu/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-24 09:42:08.990
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-09-24 09:42:15.177
+!MESSAGE Logback config file: /Users/eunyu/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.100.20250418-1315.xml
+
+!ENTRY org.eclipse.jdt.ui 4 0 2025-09-24 10:11:51.388
+!MESSAGE ArrayIndexOutOfBoundsException computing hover information in DmbCellPhoneExample.java at offset 646
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: arraycopy: last source index 3 out of bounds for object array[1]
+	at java.base/java.lang.System.arraycopy(Native Method)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getBracketHoverInfo(JavaSourceHover.java:608)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo(JavaSourceHover.java:437)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaSourceHover.getHoverInfo2(JavaSourceHover.java:399)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:165)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+	Suppressed: java.lang.Throwable: Source line 25 :
+-----
+		dmbCellPhone.bell();
+		dmbCellPhone.sendVoice("여보세요.");
+		dmbCellPhone.receiveVoice("안녕하세요! 저는 홍길동인데요.");
+		dmbCellPhone.sendVoice("아~ 예. 반갑습니다.");
+		
+		dmbCellPhone.turnOnDmb();
+		dmbCellPhone.changeChannelDmb(12);
+		dmbCellPhone.turnOffDmb();
+	}
+
+|}*/
+-----
+		at org.eclipse.jdt.internal.ui.util.SelectionUtil.logException(SelectionUtil.java:157)
+		at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:178)
+		... 3 more
