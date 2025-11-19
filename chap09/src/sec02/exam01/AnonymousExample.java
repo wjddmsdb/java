@@ -17,7 +17,8 @@ public class AnonymousExample {
 						System.out.println("8시에 일어납니다.");
 						study();
 					}
-				});
+				}
+			);
 	}
 
 }
