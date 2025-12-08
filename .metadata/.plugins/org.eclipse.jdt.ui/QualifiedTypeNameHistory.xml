@@ -10,8 +10,8 @@
     <fullyQualifiedTypeName name="sec01.exam04.Television"/>
     <fullyQualifiedTypeName name="sec01.exam01.A.B"/>
     <fullyQualifiedTypeName name="sec02.exam03.Button.OnClickListener"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="sec01.exam02.Member"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
